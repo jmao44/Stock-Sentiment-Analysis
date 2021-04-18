@@ -37,7 +37,7 @@ if __name__ == "__main__":
     single_count = df[df['Frequency'] == 1].shape[0]
     threshold = (-1 + math.sqrt(1 + 8 * single_count)) / 2
     print("Frequency threshold:")
-    print("Value: {}".format(threshold))
+    print("\tValue: {}".format(threshold))
 
     high_freq_df = df[df['Frequency'] >= threshold]
     low_freq_df = df[df['Frequency'] < threshold]
