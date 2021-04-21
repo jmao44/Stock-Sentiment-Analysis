@@ -91,7 +91,7 @@ def so_pmi(word, pwords, nwords, word_freq, total_word_count, all_titles):
     return pmi1 - pmi2
 
 
-def analyze():
+def output_so_pmi():
     nwords = read_file('categories/negative.txt')
     pwords = read_file('categories/positive.txt')
     neutral_words = read_file('categories/neutral.txt')
@@ -114,4 +114,5 @@ def analyze():
 
 if __name__ == '__main__':
     # collect_stats('result.csv')
-    analyze()
+    # output_so_pmi()
+    print("zzz")
